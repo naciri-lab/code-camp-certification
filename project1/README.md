@@ -22,4 +22,6 @@ This is a responsive survey form designed for collecting user input, including n
 2. Open the index.html file in your browser to view the survey form.
 
 
+![survey-form-free-code-camp](https://github.com/user-attachments/assets/9c59f991-e193-4a96-96fa-46bb3ec441db)
+
     
