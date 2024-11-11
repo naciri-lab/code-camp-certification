@@ -1,0 +1,193 @@
+body {
+    position: relative;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body::before {
+    content: "";
+    background: url('public/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#title {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #187AC5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#survey-form input,
+#survey-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#survey-form label {
+    width: 100%;
+    text-align: start;
+}
+
+
+#dropdown {
+    background-color: white;
+}
+
+.programmer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.programmer div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#programming-label {
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+}
+
+.programmer-options div {
+    align-items: center;
+}
+
+.programmer-options label {
+    width: 100px;
+    text-align: start;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#checkbox-question {
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+.checkbox-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    align-items: flex-start;
+
+}
+
+.coding,
+.reading,
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 3rem;
+}
+
+.checkbox-group label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.comments {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#comment-label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    text-align: start;
+}
+
+#additional-comments {
+    width: 97%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+}
+
+#submit {
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #45a049;
+}
+
+
+@media (max-width: 600px) {
+    #survey-form {
+        width: 95%;
+        padding: 0.5rem;
+    }
+
+    #additional-comments {
+        width: 100%;
+    }
+
+    .programming-label {
+        text-align: center;
+        justify-content: center;
+    }
+}
