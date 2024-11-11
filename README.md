@@ -19,8 +19,13 @@ I am weeling thto complete the [Responsive Web Design Certification](https://www
 
 ### 2. **Tribute Page**
 
-   to do...
+   - A tribute page to honor Fyodor Dostoevsky, showcasing his life, works, and a link to his Wikipedia page.
+   - [View Project](https://github.com/naciri-lab/code-camp-certification/tree/main/project2)
 
+   **Features**:
+   - Responsive layout that adapts to different screen sizes.
+   - Display of Fyodor Dostoevsky's image and biography.
+   - A button linking to his Wikipedia page.
 
 
 
