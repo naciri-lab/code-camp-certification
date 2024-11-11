@@ -10,7 +10,7 @@ I am weeling thto complete the [Responsive Web Design Certification](https://www
 
 ### 1. **Survey Form**
    - A simple responsive survey form designed to collect user data, including name, email, age, role, and preferences.
-   - [View Project](https://github.com/yourusername/naciri-survey-form)
+   - [View Project]([https://github.com/naciri-lab/code-camp-certification/tree/main/project1])
 
    **Features**:
    - Responsive layout that adapts to mobile and desktop screens.
