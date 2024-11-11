@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Push Swap Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <nav id="navbar">
+    <header>Push Swap Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Mission_and_Vision">Mission and Vision</a>
+    <a class="nav-link" href="#Sorting_Small_Stacks">Sorting Small Stacks</a>
+    <a class="nav-link" href="#Chunk_Division">Chunk Division</a>
+    <a class="nav-link" href="#Final_Steps">Final Steps</a>
+    <a class="nav-link" href="#Performance_Optimization">Performance Optimization</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>The Push Swap project is designed to sort a stack of integers using the smallest number of actions in the least possible time. It involves two stacks: Stack A (input stack) and Stack B (temporary stack).</p>
+      <p>This project demonstrates efficient stack manipulation techniques and teaches fundamental sorting concepts critical for algorithm design.</p>
+      <code>./push_swap "4 67 3 87 23"</code>
+      <ul>
+        <li>Optimize sorting algorithms.</li>
+        <li>Focus on minimizing actions.</li>
+        <li>Learn efficient stack manipulation techniques.</li>
+      </ul>
+      <img src="./public/stack.png" class="doc-image">
+    </section>
+
+    <section class="main-section" id="Mission_and_Vision">
+      <header>Mission and Vision</header>
+      <p>This project teaches optimized data sorting using linked lists for better performance compared to arrays. It explores efficient algorithms for managing stacks with different sizes.</p>
+      <p>The vision is to ensure developers understand advanced data manipulation and sorting techniques in real-world scenarios.</p>
+      <code>typedef struct s_node { int value; struct s_node *next; } t_node;</code>
+      <ul>
+        <li>Use linked lists for stack implementation.</li>
+        <li>Sort with minimal actions.</li>
+        <li>Focus on algorithmic efficiency.</li>
+      </ul>
+      <img src="./public/algorithm.png" class="doc-image">
+    </section>
+
+    <section class="main-section" id="Sorting_Small_Stacks">
+      <header>Sorting Small Stacks</header>
+      <p>For stacks with 5 or fewer elements, apply specific logic to minimize actions:</p>
+      <ul>
+        <li><strong>1 Element:</strong> No actions needed.</li>
+        <li><strong>2 Elements:</strong> Swap if not sorted.</li>
+        <li><strong>3 Elements:</strong> Compare and rotate positions.</li>
+        <li><strong>4 or 5 Elements:</strong> Push smallest elements to Stack B, sort Stack A, then push elements back.</li>
+      </ul>
+      <code>if (stack_size == 3) sort_three(stack_a);</code>
+      <p>Visualizing these operations helps in understanding the actions required for minimal sorting.</p>
+      <img src="./public/structure.png" class="doc-image">
+    </section>
+
+    <section class="main-section" id="Chunk_Division">
+      <header>Chunk Division</header>
+      <p>For stacks with 200 or more elements, divide them into smaller chunks for efficient sorting. For example:</p>
+      <ul>
+        <li>Divide a 100-element stack into 5 chunks.</li>
+        <li>Push chunk elements to Stack B.</li>
+        <li>Sort and push back to Stack A.</li>
+      </ul>
+      <code>chunk_size = stack_size / 5;</code>
+      <p>Using smaller chunks reduces the complexity of sorting. Each chunk is sorted independently, reducing the required number of steps.</p>
+      <img src="./public/chunks.png"  class="doc-image">
+      <img src="./public/stackB.png" class="doc-image">
+
+    </section>
+
+    <section class="main-section" id="Final_Steps">
+      <header>Final Steps</header>
+      <p>In larger stacks, increase the number of chunks to ensure fewer elements per chunk for manageable sorting. Divide into 10 chunks for stacks over 200 elements.</p>
+      <code>if (stack_size > 200) chunk_size = stack_size / 10;</code>
+      <ul>
+        <li>Find the largest and second-largest numbers in Stack B.</li>
+        <li>Push them back to Stack A in order.</li>
+        <li>Repeat until fully sorted.</li>
+      </ul>
+      <p>Implementing this process ensures optimal sorting with minimal operations.</p>
+      <img src="./public/pushback.png" class="doc-image">
+    </section>
+
+    <section class="main-section" id="Performance_Optimization">
+      <header>Performance Optimization</header>
+      <p>The efficiency of Push Swap heavily depends on the chosen algorithm. Below are key considerations for optimization:</p>
+      <ul>
+        <li>Minimize the number of push and rotate operations.</li>
+        <li>Use efficient data structures (e.g., linked lists).</li>
+        <li>Profile and test with large datasets to ensure scalability.</li>
+      </ul>
+      <code>optimize_actions(stack_a, stack_b);</code>
+      <p>Always evaluate edge cases, such as already sorted stacks or repetitive numbers, to avoid unnecessary operations.</p>
+    </section>
+  </main>
+</body>
+
+</html>
