@@ -28,6 +28,17 @@ I am weeling thto complete the [Responsive Web Design Certification](https://www
    - A button linking to his Wikipedia page.
 
 
+### 3. **Documentation Page**
+
+   - A technical documentation page detailing the Push Swap project, which focuses on sorting integers in a stack with minimal actions.
+    View Project
+   - [View Project](https://github.com/naciri-lab/code-camp-certification/tree/main/project3)
+
+   **Features**:
+   - Comprehensive explanation of the Push Swap project, its purpose, and implementation.
+   - Includes code snippets, examples, and diagrams for better understanding.
+   - Sections cover small stack sorting, chunk division, and performance optimization.
+   - Responsive layout with a fixed sidebar navigation menu.
 
 
 
