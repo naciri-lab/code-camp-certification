@@ -4,13 +4,13 @@ This repository contains a collection of my small web development projects, show
 
 ## Certification
 
-I am weeling thto complete the [Responsive Web Design Certification]([https://www.freecodecamp.org/learn/2022/responsive-web-design/) from FreeCodeCamp. 
+I am weeling thto complete the [Responsive Web Design Certification](https://www.freecodecamp.org/learn/2022/responsive-web-design/) from FreeCodeCamp. 
 
 ## Projects in this Repository
 
 ### 1. **Survey Form**
    - A simple responsive survey form designed to collect user data, including name, email, age, role, and preferences.
-   - [View Project]([https://github.com/naciri-lab/code-camp-certification/tree/main/project1)
+   - [View Project](https://github.com/naciri-lab/code-camp-certification/tree/main/project1)
 
    **Features**:
    - Responsive layout that adapts to mobile and desktop screens.
