@@ -4,7 +4,7 @@ This repository contains a collection of my small web development projects, show
 
 ## Certification
 
-I am weeling thto complete the [Responsive Web Design Certification](https://www.freecodecamp.org/certification/yourusername/responsive-web-design) from FreeCodeCamp. 
+I am weeling thto complete the [Responsive Web Design Certification]([https://www.freecodecamp.org/learn/2022/responsive-web-design/]) from FreeCodeCamp. 
 
 ## Projects in this Repository
 
